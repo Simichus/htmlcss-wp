@@ -1,0 +1,45 @@
+/* Reset  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 1500px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* utils */
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* header */
+.page-header figure{
+    margin-bottom: 20px;
+}
+
+.page-header img{
+    height: 75px;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    padding-right: 30px;
+}
+
+.page-header a{
+    color: gray;
+}
