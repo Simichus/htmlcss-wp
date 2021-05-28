@@ -22,7 +22,17 @@ a{
     clear: both;
 }
 
+.darken{
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%;
+}
+
 /* header */
+.page-header{
+    margin-bottom: 30px;
+}
+
 .page-header figure{
     margin-bottom: 20px;
 }
@@ -42,4 +52,40 @@ nav ul li{
 
 .page-header a{
     color: gray;
+}
+
+/* main  */
+main{
+    margin: 30px auto;
+}
+
+#top-content{
+    height: 650px;
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+#top-content > div{
+
+    padding: 0 30px;
+    padding-top: 400px;
+    border-radius: 15px;
+}
+
+#top-content .darken > div{
+    color: white;
+
+    font-size: x-large;
+    width: 60%;
+}
+
+#top-content h1{
+    font-weight: 300;
+}
+
+#top-content p{
+    font-size: 20px;
 }
