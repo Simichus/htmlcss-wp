@@ -22,8 +22,14 @@ a{
     clear: both;
 }
 
-.darken{
-    background-color: rgba(0, 0, 0, 0.3);
+.darken-2{
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 100%;
+}
+
+.darken-1{
+    background-color: rgba(0, 0, 0, 0.1);
     height: 100%;
     width: 100%;
 }
@@ -34,6 +40,7 @@ a{
 
 /* header */
 .page-header{
+    padding-top: 10px;
     margin-bottom: 30px;
 }
 
@@ -81,7 +88,7 @@ main{
     padding-top: 400px;
 }
 
-#top-content .darken > div{
+#top-content .darken-2 > div{
     color: white;
 
     font-size: x-large;
@@ -119,18 +126,39 @@ main{
     padding: 0 20px;
 }
 
-#bottom-content .col img{
-    height: 400px;
+#bottom-content .col figure{
     width: 100%;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
 }
 
-#bottom-content .col:last-child img{
-    width: 400px;
+#bottom-content .col:first-child figure{
+    background-image: url(../img/img-1.jpg);
+}
+
+#bottom-content .col:nth-child(2) figure{
+    background-image: url(../img/banner-2.jpg);
+}
+
+#bottom-content .col:last-child figure{
+    background-image: url(../img/img-3.jpg);
+    background-size: 450px 400px;
+}
+
+#bottom-content .col h2{
+    line-height: 48px;
+    font-weight: 400;
+}
+
+#bottom-content .col p{
+    color: grey;
 }
 
 /* footer */
 
 footer{
+    margin: 30px 0;
     font-size: 25px;
     text-align: center;
 }
